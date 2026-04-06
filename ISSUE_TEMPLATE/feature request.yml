@@ -1,0 +1,41 @@
+name: ✨ 機能追加・改善提案
+description: 新機能や既存機能の改善提案
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        どんな課題を解決したいか、できるだけ具体的に書いてね。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: やりたいこと・解決したい課題
+      description: 何が不便・不足しているか
+      placeholder: 例）〇〇するときに毎回△△が必要で面倒
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 提案する解決策
+      description: どう解決したいか
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 代替案・別アプローチ
+      description: 他に検討したやり方があれば
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: その他メモ
+      description: 参考リンク・スケッチなど
+    validations:
+      required: false

@@ -1,0 +1,46 @@
+name: 📋 タスク
+description: リファクタ・調査・ドキュメント整備など
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        開発タスクの記録・管理用。バグでも機能追加でもないものはここで。
+
+  - type: textarea
+    id: task
+    attributes:
+      label: やること
+      description: 具体的に何をするか
+      placeholder: 例）〇〇コンポーネントをserver componentに移行する
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: 完了の定義（Done条件）
+      description: 何ができたら終わりか
+      placeholder: 例）テストが通り、動作確認できた状態
+    validations:
+      required: false
+
+  - type: textarea
+    id: related
+    attributes:
+      label: 関連するissue・PR
+      description: あればリンクを貼ってください
+      placeholder: "#123"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      options:
+        - 🔴 高
+        - 🟡 中
+        - 🟢 低
+    validations:
+      required: false

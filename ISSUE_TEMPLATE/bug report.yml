@@ -1,0 +1,62 @@
+name: 🐛 バグ報告
+description: 予期しない動作・エラーの報告
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグを見つけてくれてありがとう。再現できるよう、できるだけ詳しく書いてね。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 何が起きてるか
+      description: 一言で説明してください
+      placeholder: 例）〇〇ページを開くと白い画面になる
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: どうすれば再現できるか
+      placeholder: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待してた動作
+      placeholder: 例）〇〇が表示されるはず
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+      placeholder: 例）エラーが出て表示されない
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: 環境
+      description: OS・ブラウザ・バージョンなど
+      placeholder: 例）macOS 14 / Chrome 123 / v1.2.0
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: スクリーンショット・ログ
+      description: あれば貼ってください
+    validations:
+      required: false
